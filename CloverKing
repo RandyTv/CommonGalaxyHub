@@ -1,32 +1,208 @@
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "Notification"; Text = "Made by Clover King#6209"; })
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Common Galaxy Hub", "Midnight")
-local Main = Window:NewTab("Home")
-local MainSection = Main:NewSection("Credits")
-MainSection:NewLabel("Clover King#6209")
-local Script = Window:NewTab("Script's")
-local ScriptSection = Script:NewSection("Common Script's")
-ScriptSection:NewSlider("Walk Speed", "Walk Speed info", 500, 0, function(s)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
-ScriptSection:NewSlider("Jump Power", "Jump Power info", 500, 1, function(jp)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = jp
-end)
-ScriptSection:NewTextBox("Teleport To Player", "Teleports To Player", function(tp)
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[tp].Character.HumanoidRootPart.CFrame
-    local Victim = tp
-end)
-ScriptSection:NewLabel("Teleport Only Works If Full User And Not Using Fe")
-ScriptSection:NewLabel("Animation.")
-ScriptSection:NewButton("Fling All", "Fling all Players", function()
-loadstring(game:HttpGet('https://pastebin.com/raw/9uJC1ay7'))()
-end)
-ScriptSection:NewLabel("Flings all Players forever")
-ScriptSection:NewLabel("Warning It May Cause Lag!")
-ScriptSection:NewButton("Fly ", "Fly For Pc", function()
-loadstring(game:HttpGet('https://pastebin.com/raw/Labz1cM3'))()
-end)
-ScriptSection:NewButton("KeyBoard ", "KeyBoard for Mobile", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
-end)
-ScriptSection:NewLabel("Use the keyboard to move in fly Script Mobiles!") 
+if game.PlaceId == 6284583030 then
+    game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "Notification"; Text = "Made by Clover King#6209"; })
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Pet Simulator X Galaxy Hub", "Midnight")
+    
+    ---Script
+    local Egg = Window:NewTab("Egg Hatch")
+    local EggSection = Egg:NewSection("SpawnWorld")
+    
+    
+    ---Cracked Eggs
+    EggSection:NewToggle("Craked Eggs", "Open Cracked Eggs", function(state)
+        if state then
+            _G.autohatch = true
+        while _G.autohatch == true do
+            local A_1 = 
+            {
+                [1] = "\67\114\97\99\107\101\100\32\69\103\103", 
+                [2] = false
+            }
+            local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+            Event:InvokeServer(A_1)
+            
+            wait() 
+        end
+        else
+            _G.autohatch = false
+        while _G.autohatch == true do
+            local A_1 = 
+            {
+                [1] = "\67\114\97\99\107\101\100\32\69\103\103", 
+                [2] = false
+            }
+            local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+            Event:InvokeServer(A_1)
+        end
+        end
+    end)
+    
+    
+    ----Spotted eggs
+        EggSection:NewToggle("Spotted Eggs", "Open Spotted Eggs", function(state)
+            if state then
+                _G.autohatch = true
+            while _G.autohatch == true do
+local A_1 = 
+{
+	[1] = "Spotted Egg", 
+	[2] = false
+}
+local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+Event:InvokeServer(A_1)
+         
+                wait() 
+            end
+            else
+                _G.autohatch = false
+            while _G.autohatch == true do
+local A_1 = 
+{
+	[1] = "Spotted Egg", 
+	[2] = false
+}
+local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+Event:InvokeServer(A_1)
+
+            end
+            end
+        end)
+        
+        
+        ---Golden Cracked Eggs
+            EggSection:NewToggle("Golden Cracked Eggs", "Open Golden Cracked Eggs", function(state)
+                if state then
+                    _G.autohatch = true
+                while _G.autohatch == true do
+local A_1 = 
+{
+	[1] = "Golden Cracked Egg", 
+	[2] = false
+}
+local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+Event:InvokeServer(A_1)
+
+             
+                    wait() 
+                end
+                else
+                    _G.autohatch = false
+                while _G.autohatch == true do
+local A_1 = 
+{
+	[1] = "Golden Cracked Egg", 
+	[2] = false
+}
+local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+Event:InvokeServer(A_1)
+
+    
+                end
+                end
+    end)
+    
+    
+    
+    ---Golden Spotted Eggs
+            EggSection:NewToggle("Golden Spotted Eggs", "Open Golden Spotted Eggs", function(state)
+                if state then
+                    _G.autohatch = true
+                while _G.autohatch == true do
+local A_1 = 
+{
+	[1] = "Golden Spotted Egg", 
+	[2] = false
+}
+local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+Event:InvokeServer(A_1)
+
+
+             
+                    wait() 
+                end
+                else
+                    _G.autohatch = false
+                while _G.autohatch == true do
+local A_1 = 
+{
+	[1] = "Golden Spotted Egg", 
+	[2] = false
+}
+local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+Event:InvokeServer(A_1)
+    
+                end
+                end
+    end)
+    
+    
+    ---Wood Eggs
+            EggSection:NewToggle("Wood Eggs", "Open Wood Eggs", function(state)
+                if state then
+                    _G.autohatch = true
+                while _G.autohatch == true do
+local A_1 = 
+{
+	[1] = "Wood Egg", 
+	[2] = false
+}
+local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+Event:InvokeServer(A_1)
+
+
+
+             
+                    wait() 
+                end
+                else
+                    _G.autohatch = false
+                while _G.autohatch == true do
+local A_1 = 
+{
+	[1] = "Wood Egg", 
+	[2] = false
+}
+local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+Event:InvokeServer(A_1)
+
+                end
+                end
+    end)
+    
+    
+    ---Fantansy
+    local EggSection = Egg:NewSection("Fantansy World")
+
+    
+    
+    ---Enchanted Eggs
+            EggSection:NewToggle("Enchanted Eggs", "Open Enchanted Eggs", function(state)
+                if state then
+                    _G.autohatch = true
+                while _G.autohatch == true do
+local A_1 = 
+{
+	[1] = "Enchanted Egg", 
+	[2] = false
+}
+local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+Event:InvokeServer(A_1)
+             
+                    wait() 
+                end
+                else
+                    _G.autohatch = false
+                while _G.autohatch == true do
+local A_1 = 
+{
+	[1] = "Enchanted Egg", 
+	[2] = false
+}
+local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["buy egg"]
+Event:InvokeServer(A_1)
+
+
+                end
+                end
+    end)
+end
